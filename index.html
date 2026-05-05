@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>James Barron</title>
+<meta name="description" content="James Barron — software engineer, Bath UK.">
+<style>
+  :root {
+    --paper: #f3efe6;
+    --ink:   #1d1b18;
+    --muted: #6b6760;
+    --rule:  #d8d2c4;
+    --accent:#8a3324; /* oxblood — not a Tailwind colour */
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Charter, "Iowan Old Style", "Apple Garamond", "Source Serif Pro", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  main {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+  header { margin-bottom: 2.5rem; }
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem;
+    letter-spacing: -0.01em;
+  }
+  .tag {
+    color: var(--muted);
+    font-style: italic;
+    margin: 0;
+  }
+  .note {
+    border-left: 3px solid var(--accent);
+    padding: 0.1rem 0 0.1rem 0.9rem;
+    margin: 2rem 0 2.5rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h2 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    font-weight: 600;
+    margin: 2.6rem 0 0.9rem;
+    font-family: ui-sans-serif, -apple-system, "Helvetica Neue", sans-serif;
+  }
+  p { margin: 0 0 1rem; }
+  a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  a:hover { color: var(--accent); }
+  .project { margin-bottom: 1.4rem; }
+  .project h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.15rem;
+  }
+  .project .stack {
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-style: italic;
+    margin: 0 0 0.35rem;
+  }
+  .project p { margin: 0; }
+  .roles { margin: 0; padding: 0; list-style: none; }
+  .roles li {
+    display: flex;
+    gap: 1.2rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed var(--rule);
+  }
+  .roles li:last-child { border-bottom: 0; }
+  .roles .when {
+    flex: 0 0 8.5rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.92rem;
+  }
+  .roles .what { flex: 1; }
+  .roles .what strong { font-weight: 600; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  ::selection { background: var(--accent); color: var(--paper); }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <h1>James Barron</h1>
+    <p class="tag">Software engineer. Bath, UK. Mostly Laravel, full stack.</p>
+  </header>
+
+  <div class="note">
+    This is a placeholder I threw up in three minutes. A proper version is on the way — for now, the short version is below.
+  </div>
+
+  <h2>Currently</h2>
+  <p>
+    Engineer at <strong>OnlyExcel</strong> since 2020, building Laravel and React web
+    applications end to end — design, APIs, database, deployment.
+  </p>
+
+  <h2>Selected Work</h2>
+
+  <div class="project">
+    <h3>ProjectionGenie / RunSmart</h3>
+    <p class="stack">Laravel · Vue · QuickBooks API</p>
+    <p>Lead engineer on RunSmart, a forecasting tool that pulls live business data from QuickBooks to produce seasonal projections and reporting. Started by fixing bugs in its predecessor, StartSmart, and ended up running the new product.</p>
+  </div>
+
+  <div class="project">
+    <h3>RSG Scaffolding CRM</h3>
+    <p class="stack">Laravel · sole developer since 2023</p>
+    <p>Full-stack ownership of an internal CRM and billing platform — leads, scheduling, QuickBooks invoicing. Everything from features to the support inbox lands with me.</p>
+  </div>
+
+  <div class="project">
+    <h3>Blipfoto</h3>
+    <p class="stack">PHP · sole developer since 2022</p>
+    <p>A long-running daily photo journal community. I handle support and ongoing development, including a pilot Cyacomb integration to keep illegal material off the platform.</p>
+  </div>
+
+  <div class="project">
+    <h3>ToDoDrive</h3>
+    <p class="stack">Laravel · Pipedrive + Microsoft To Do</p>
+    <p>Built end to end. Synchronises activities between Pipedrive and Microsoft To Do for sales and ops teams. Came out of a real workflow problem at an ingredients distributor — the goal was reliable background sync that nobody has to think about.</p>
+  </div>
+
+  <h2>Reach Me</h2>
+  <p>
+    <a href="mailto:james@jamesbarron.co.uk">james@jamesbarron.co.uk</a>
+  </p>
+
+  <footer>
+    Placeholder Portfolio · last updated <time>May 2026</time>
+  </footer>
+
+</main>
+</body>
+</html>
