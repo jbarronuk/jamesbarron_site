@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>James Barron</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root {
+    --paper: #f3efe6;
+    --ink:   #1d1b18;
+    --muted: #6b6760;
+    --rule:  #d8d2c4;
+    --accent:#8a3324;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Charter, "Iowan Old Style", "Apple Garamond", "Source Serif Pro", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+    max-width: 32rem;
+    width: 100%;
+    padding: 4rem 1.5rem 5rem;
+  }
+  .eyebrow {
+    font-family: ui-sans-serif, -apple-system, "Helvetica Neue", sans-serif;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 1.6rem;
+    opacity: 0;
+    animation: fade-up 0.5s ease 0.1s forwards;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 0.3rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    opacity: 0;
+    animation: fade-up 0.5s ease 0.2s forwards;
+  }
+  .tag {
+    color: var(--muted);
+    font-style: italic;
+    margin: 0 0 2.5rem;
+    opacity: 0;
+    animation: fade-up 0.5s ease 0.3s forwards;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 0 0 2.5rem;
+    opacity: 0;
+    animation: fade-up 0.5s ease 0.35s forwards;
+  }
+  .body-text {
+    opacity: 0;
+    animation: fade-up 0.5s ease 0.4s forwards;
+  }
+  p { margin: 0 0 1rem; }
+  p:last-child { margin-bottom: 0; }
+  a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  a:hover { color: var(--accent); }
+  .links {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    opacity: 0;
+    animation: fade-up 0.5s ease 0.55s forwards;
+  }
+  .link-row {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px dashed var(--rule);
+  }
+  .link-row:first-child {
+    border-top: 1px dashed var(--rule);
+  }
+  .link-label {
+    flex: 0 0 6.5rem;
+    font-family: ui-sans-serif, -apple-system, "Helvetica Neue", sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .link-row a {
+    font-size: 0.95rem;
+  }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  ::selection { background: var(--accent); color: var(--paper); }
+</style>
+</head>
+<body>
+<main>
+
+  <p class="eyebrow">Awesome! You scanned the card</p>
+
+  <h1>James Barron</h1>
+  <p class="tag">Software engineer. Bath, UK.</p>
+
+  <hr>
+
+  <div class="body-text">
+    <p>
+      Thanks for reaching out. I'm a full-stack engineer, mostly Laravel and React,
+      currently at <strong>OnlyExcel</strong>, building web applications end to end
+      from design through to deployment.
+    </p>
+    <p>
+      If we've just met or you're thinking about working together, drop me an email.
+      I try to reply the same day.
+    </p>
+  </div>
+
+  <div class="links">
+    <div class="link-row">
+      <span class="link-label">Email</span>
+      <a href="mailto:james@jamesbarron.co.uk">james@jamesbarron.co.uk</a>
+    </div>
+    <div class="link-row">
+      <span class="link-label">Portfolio</span>
+      <a href="/">jamesbarron.co.uk</a>
+    </div>
+    <div class="link-row">
+      <span class="link-label">GitHub</span>
+      <a href="https://github.com/jbarronuk" target="_blank" rel="noopener">github.com/jbarronuk</a>
+    </div>
+    <div class="link-row">
+      <span class="link-label">LinkedIn</span>
+      <a href="https://www.linkedin.com/in/james-barron-62b809b3/" target="_blank" rel="noopener">linkedin.com/in/james-barron</a>
+    </div>
+  </div>
+
+</main>
+</body>
+</html>
