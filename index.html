@@ -1,163 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>James Barron</title>
-<meta name="description" content="James Barron — software engineer, Bath UK.">
-<style>
-  :root {
-    --paper: #f3efe6;
-    --ink:   #1d1b18;
-    --muted: #6b6760;
-    --rule:  #d8d2c4;
-    --accent:#8a3324;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; }
-  body {
-    background: var(--paper);
-    color: var(--ink);
-    font-family: Charter, "Iowan Old Style", "Apple Garamond", "Source Serif Pro", Georgia, serif;
-    font-size: 18px;
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-  main {
-    max-width: 38rem;
-    margin: 0 auto;
-    padding: 4rem 1.5rem 6rem;
-  }
-  header { margin-bottom: 2.5rem; }
-  h1 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin: 0 0 0.25rem;
-    letter-spacing: -0.01em;
-  }
-  .tag {
-    color: var(--muted);
-    font-style: italic;
-    margin: 0;
-  }
-  .note {
-    border-left: 3px solid var(--accent);
-    padding: 0.1rem 0 0.1rem 0.9rem;
-    margin: 2rem 0 2.5rem;
-    color: var(--muted);
-    font-size: 0.95rem;
-  }
-  h2 {
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: var(--muted);
-    font-weight: 600;
-    margin: 2.6rem 0 0.9rem;
-    font-family: ui-sans-serif, -apple-system, "Helvetica Neue", sans-serif;
-  }
-  p { margin: 0 0 1rem; }
-  a {
-    color: var(--ink);
-    text-decoration: underline;
-    text-decoration-color: var(--accent);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-  }
-  a:hover { color: var(--accent); }
-  .project { margin-bottom: 1.4rem; }
-  .project h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0 0 0.15rem;
-  }
-  .project .stack {
-    color: var(--muted);
-    font-size: 0.85rem;
-    font-style: italic;
-    margin: 0 0 0.35rem;
-  }
-  .project p { margin: 0; }
-  .roles { margin: 0; padding: 0; list-style: none; }
-  .roles li {
-    display: flex;
-    gap: 1.2rem;
-    padding: 0.5rem 0;
-    border-bottom: 1px dashed var(--rule);
-  }
-  .roles li:last-child { border-bottom: 0; }
-  .roles .when {
-    flex: 0 0 8.5rem;
-    color: var(--muted);
-    font-variant-numeric: tabular-nums;
-    font-size: 0.92rem;
-  }
-  .roles .what { flex: 1; }
-  .roles .what strong { font-weight: 600; }
-  footer {
-    margin-top: 3rem;
-    padding-top: 1.2rem;
-    border-top: 1px solid var(--rule);
-    color: var(--muted);
-    font-size: 0.9rem;
-  }
-  ::selection { background: var(--accent); color: var(--paper); }
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>James Barron — Laravel maintenance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main>
+<div class="page">
 
-  <header>
-    <h1>James Barron</h1>
-    <p class="tag">Software engineer. Bath, UK. Mostly Laravel, full stack.</p>
+  <header class="top">
+    <a class="mark" href="index.html"><b>James Barron</b></a>
+    <nav class="topnav"><a href="#service">service</a><a href="work.html">work</a><a href="contact.html">contact</a></nav>
   </header>
+  <div class="dash"></div>
 
-  <div class="note">
-    This is a placeholder I threw up in three minutes. A proper version is on the way — for now, the short version is below.
-  </div>
+  <section class="hero">
+    <div class="eyebrow">long-term care for laravel applications</div>
+    <h1>Web &amp; mobile apps that stick around.</h1>
+    <p class="sub">When the agency or freelancer who built your Laravel app moves on, you are left depending on software nobody is maintaining. I take it over and keep it patched, current and quietly running, on a fixed monthly retainer rather than a panicked rebuild.</p>
+    <a href="contact.html" class="go">start a conversation</a>
+  </section>
 
-  <h2>Currently</h2>
-  <p>
-    Engineer at <strong>OnlyExcel</strong> since 2020, building Laravel and React web
-    applications end to end — design, APIs, database, deployment.
-  </p>
+  <div class="dash"></div>
 
-  <h2>Selected Work</h2>
+  <section class="service" id="service">
+    <div class="label">the service</div>
+    <p class="intro">One retainer that keeps your app safe to depend on again.</p>
+    <div class="cols">
+      <div>
+        <h3>what it covers</h3>
+        <ul>
+          <li>Security patches and dependency upgrades</li>
+          <li>Bug fixes and breakages</li>
+          <li>Small new features as you need them</li>
+          <li>Monitoring, backups and documentation</li>
+        </ul>
+      </div>
+      <div>
+        <h3>how it works</h3>
+        <ul>
+          <li>A fixed block of hours every month</li>
+          <li>Never exceeded without asking you first</li>
+          <li>No surprise invoices</li>
+          <li>I begin by taking stock of where your app stands</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <div class="project">
-    <h3>ProjectionGenie / RunSmart</h3>
-    <p class="stack">Laravel · Vue · QuickBooks API</p>
-    <p>Lead engineer on RunSmart, a forecasting tool that pulls live business data from QuickBooks to produce seasonal projections and reporting. Started by fixing bugs in its predecessor, StartSmart, and ended up running the new product.</p>
-  </div>
+  <div class="dash"></div>
 
-  <div class="project">
-    <h3>RSG Scaffolding CRM</h3>
-    <p class="stack">Laravel · sole developer since 2023</p>
-    <p>Full-stack ownership of an internal CRM and billing platform — leads, scheduling, QuickBooks invoicing. Everything from features to the support inbox lands with me.</p>
-  </div>
+  <section class="qual">
+    <div class="label">is this you?</div>
+    <p>You inherited a Laravel app, the person who built it has gone, and it is too important to fall over.</p>
+    <p class="answer">That is exactly the work I take on.</p>
+  </section>
 
-  <div class="project">
-    <h3>Blipfoto</h3>
-    <p class="stack">PHP · sole developer since 2022</p>
-    <p>A long-running daily photo journal community. I handle ongoing development, including a pilot Cyacomb integration to keep illegal material off the platform.</p>
-  </div>
+  <div class="dash"></div>
 
-  <div class="project">
-    <h3>ToDoDrive</h3>
-    <p class="stack">Laravel · Pipedrive + Microsoft To Do</p>
-    <p>Built end to end. Synchronises activities between Pipedrive and Microsoft To Do for sales and ops teams. Came out of a real workflow problem at an ingredients distributor — the goal was reliable background sync that nobody has to think about.</p>
-  </div>
+  <section class="work" id="work">
+    <div class="worktop"><div class="label">in my care</div><a href="work.html">see every project in detail</a></div>
+    <div class="row">
+      <div>
+        <div class="name"><a href="work.html#rsg">RSG</a></div>
+        <div class="desc">An internal CRM and billing platform for a scaffolding firm. Quoting, scheduling, payroll and invoicing, looked after as the sole developer.</div>
+      </div>
+      <div class="meta"><span id="rsg-dur">&nbsp;</span><span class="since">in my care since 2023</span></div>
+    </div>
+    <div class="row">
+      <div>
+        <div class="name"><a href="work.html#blipfoto">Blipfoto</a></div>
+        <div class="desc">A long-running daily photo journal community on PHP, kept developed and safe.</div>
+      </div>
+      <div class="meta"><span id="blip-dur">&nbsp;</span><span class="since">in my care since 2022</span></div>
+    </div>
+  </section>
 
-  <h2>Reach Me</h2>
-  <p>
-    <a href="mailto:james@jamesbarron.co.uk">james@jamesbarron.co.uk</a>
-  </p>
+  <div class="dash"></div>
 
-  <footer>
-    Placeholder Portfolio · last updated <time>May 2026</time>
+  <section class="work">
+    <div class="label">also built</div>
+    <div class="row">
+      <div>
+        <div class="name"><a href="work.html#runsmart">RunSmart</a></div>
+        <div class="desc">QuickBooks-fed financial forecasting for small businesses. Laravel and Vue.</div>
+      </div>
+      <div class="meta"><span class="tag">used in 40+ countries</span></div>
+    </div>
+    <div class="row">
+      <div>
+        <div class="name"><a href="work.html#pickup">PickUp</a></div>
+        <div class="desc">Turns a won Pipedrive deal into a fully built ClickUp project.</div>
+      </div>
+      <div class="meta"><span class="tag">live on the marketplace</span></div>
+    </div>
+    <div class="row">
+      <div>
+        <div class="name"><a href="work.html#tododrive">ToDoDrive</a></div>
+        <div class="desc">Keeps Pipedrive and Microsoft To Do in sync in the background.</div>
+      </div>
+      <div class="meta"><span class="tag">awaiting approval</span></div>
+    </div>
+  </section>
+
+  <div class="dash"></div>
+
+  <section class="contact" id="contact">
+    <div class="label">start a conversation</div>
+    <p class="lead">Tell me about your app and what is worrying you. I will take a look and propose a retainer that fits.</p>
+    <button class="email" id="email">james@jamesbarron.co.uk</button>
+    <span class="copied" id="copied">copied</span>
+  </section>
+
+  <div class="dash"></div>
+  <footer class="foot">
+    <span>James Barron · web &amp; mobile apps that stick around</span>
+    <span>Bath, UK · building apps since 2005</span>
   </footer>
 
-</main>
+</div>
+
+<script>
+  function dur(year, month, day) {
+    var start = new Date(year, month, day);
+    var now = new Date();
+    var m = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+    if (now.getDate() < start.getDate()) m -= 1;
+    var y = Math.floor(m / 12);
+    var rem = m % 12;
+    var out = [];
+    if (y > 0) out.push(y + (y === 1 ? ' year' : ' years'));
+    out.push(rem + (rem === 1 ? ' month' : ' months'));
+    return out.join(', ');
+  }
+  var a = document.getElementById('rsg-dur'); if (a) a.textContent = dur(2023, 9, 9);
+  var b = document.getElementById('blip-dur'); if (b) b.textContent = dur(2022, 5, 17);
+
+  var btn = document.getElementById('email');
+  var note = document.getElementById('copied');
+  if (btn) btn.addEventListener('click', function () {
+    navigator.clipboard && navigator.clipboard.writeText('james@jamesbarron.co.uk');
+    note.classList.add('on');
+    setTimeout(function () { note.classList.remove('on'); }, 1600);
+  });
+</script>
 </body>
 </html>

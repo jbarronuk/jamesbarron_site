@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — James Barron</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="top">
+    <a class="mark" href="index.html"><b>James Barron</b></a>
+    <nav class="topnav"><a href="index.html#service">service</a><a href="work.html">work</a><a href="contact.html" class="here">contact</a></nav>
+  </header>
+  <div class="dash"></div>
+
+  <section class="phead">
+    <div class="label">contact</div>
+    <h1>Let's talk about your app.</h1>
+    <p class="sub">Whether it is limping along, overdue an upgrade, or simply needs someone reliable to take it on, I would like to hear about it. No obligation, and no hard sell.</p>
+  </section>
+
+  <div class="dash"></div>
+
+  <div class="label">getting in touch</div>
+  <div class="cols">
+    <div>
+      <h3>what to tell me</h3>
+      <ul>
+        <li>What the app does, and how central it is to the business</li>
+        <li>The stack, if you know it</li>
+        <li>Who built it, and whether they are still around</li>
+        <li>What is worrying you right now</li>
+      </ul>
+    </div>
+    <div>
+      <h3>what happens next</h3>
+      <ul>
+        <li>I take a proper look at where things stand</li>
+        <li>I come back with an honest view, and a retainer that fits</li>
+        <li>You decide, with no pressure either way</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="dash"></div>
+
+  <section class="formsec">
+    <div class="label">send a message</div>
+    <form class="form" id="cform" action="https://formspree.io/f/mgobolbr" method="POST">
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="_subject" value="New enquiry from jamesbarron.co.uk">
+      <div class="field">
+        <label for="f-name">your name</label>
+        <input id="f-name" type="text" name="name" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="f-email">your email</label>
+        <input id="f-email" type="email" name="email" required autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="f-message">about your app</label>
+        <textarea id="f-message" name="message" rows="5" required placeholder="What it does, the stack if you know it, who built it, and what is worrying you right now."></textarea>
+      </div>
+      <button type="submit" class="submit">send message</button>
+      <p class="formnote" id="formnote">I usually reply the same day.</p>
+    </form>
+  </section>
+
+  <div class="dash"></div>
+
+  <section class="elsewhere">
+    <div class="label">elsewhere</div>
+    <div class="links">
+      <button class="lnk" id="copyemail">james@jamesbarron.co.uk</button>
+      <a class="lnk" href="https://www.linkedin.com/in/james-barron-62b809b3/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="lnk" href="https://github.com/jbarronuk" target="_blank" rel="noopener">GitHub</a>
+      <span class="copied" id="copied">copied</span>
+    </div>
+  </section>
+
+  <div class="dash"></div>
+  <footer class="foot">
+    <span>James Barron &middot; web &amp; mobile apps that stick around</span>
+    <span>Bath, UK &middot; building apps since 2005</span>
+  </footer>
+
+</div>
+
+<script>
+  var form = document.getElementById('cform');
+  var note = document.getElementById('formnote');
+  var submit = form ? form.querySelector('.submit') : null;
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      submit.disabled = true;
+      note.className = 'formnote';
+      note.textContent = 'sending...';
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (r) {
+        if (r.ok) {
+          form.reset();
+          note.className = 'formnote ok';
+          note.textContent = 'Thank you. Your message is on its way and I will be in touch soon.';
+        } else {
+          return r.json().then(function (d) {
+            var msg = d && d.errors ? d.errors.map(function (x) { return x.message; }).join(', ') : '';
+            note.className = 'formnote err';
+            note.textContent = msg || 'Something went wrong. Please email me instead.';
+            submit.disabled = false;
+          });
+        }
+      }).catch(function () {
+        note.className = 'formnote err';
+        note.textContent = 'Something went wrong. Please email me instead.';
+        submit.disabled = false;
+      });
+    });
+  }
+
+  var copy = document.getElementById('copyemail');
+  var copied = document.getElementById('copied');
+  if (copy) copy.addEventListener('click', function () {
+    navigator.clipboard && navigator.clipboard.writeText('james@jamesbarron.co.uk');
+    copied.classList.add('on');
+    setTimeout(function () { copied.classList.remove('on'); }, 1600);
+  });
+</script>
+</body>
+</html>

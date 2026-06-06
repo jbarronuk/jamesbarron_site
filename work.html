@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — James Barron</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="top">
+    <a class="mark" href="index.html"><b>James Barron</b></a>
+    <nav class="topnav"><a href="index.html#service">service</a><a href="work.html" class="here">work</a><a href="contact.html">contact</a></nav>
+  </header>
+  <div class="dash"></div>
+
+  <section class="phead">
+    <div class="label">work</div>
+    <h1>Apps I keep running, and apps I have built.</h1>
+    <p class="sub">The first two I look after on a monthly retainer, year after year. The rest I designed and shipped end to end. Both are the same promise: software that sticks around.</p>
+  </section>
+
+  <div class="dash"></div>
+
+  <div class="grouplabel">in my care</div>
+
+  <article class="proj" id="rsg">
+    <div class="body">
+      <div class="name">RSG</div>
+      <p>An internal CRM and billing platform built specifically for a scaffolding firm, rather than a generic CRM bent into shape. It runs the business from the first enquiry through to the final invoice.</p>
+      <p>I own it end to end, from new features down to the support inbox. The work is steady and largely invisible, which is the point: the platform the company depends on every day keeps working, and keeps growing as the business does.</p>
+      <ul class="caps">
+        <li>A scaffolding-aware quoting engine: components, rates, rules, markups and VAT</li>
+        <li>Crew and vehicle scheduling, with a job pipeline from erected to dismantled</li>
+        <li>Guided site surveys and categorised photo records</li>
+        <li>QR clock-in and clock-out, payroll, holidays and absence</li>
+        <li>Two-way customer messaging by text and email</li>
+        <li>QuickBooks invoicing, reporting and role-based access</li>
+      </ul>
+    </div>
+    <div class="pmeta">
+      <dl>
+        <dt>stack</dt><dd>Laravel, React</dd>
+        <dt>role</dt><dd>sole developer</dd>
+        <dt>in my care</dt><dd class="live" id="rsg-dur">&nbsp;</dd>
+        <dt>since</dt><dd>2023</dd>
+      </dl>
+    </div>
+  </article>
+
+  <div class="dash"></div>
+  <div style="height:0"></div>
+
+  <article class="proj" id="blipfoto">
+    <div class="body">
+      <div class="name">Blipfoto</div>
+      <p>A daily photo journal community built on one simple rule that has held since 2004: one photo a day, taken that day. It began in Edinburgh, won a BAFTA Scotland award, and has kept a calm, ad-free character while many of its contemporaries vanished.</p>
+      <p>I handle ongoing development of a large, long-lived PHP codebase, the kind of platform that only survives if someone reliable keeps looking after it. Recent work includes a pilot integration with Cyacomb to keep illegal material off the platform.</p>
+      <ul class="caps">
+        <li>Ongoing maintenance of a large, long-running PHP application</li>
+        <li>A pilot Cyacomb integration for platform safety</li>
+        <li>A community spanning more than 170 countries</li>
+      </ul>
+    </div>
+    <div class="pmeta">
+      <dl>
+        <dt>stack</dt><dd>PHP</dd>
+        <dt>role</dt><dd>sole developer</dd>
+        <dt>in my care</dt><dd class="live" id="blip-dur">&nbsp;</dd>
+        <dt>since</dt><dd>2022</dd>
+      </dl>
+    </div>
+  </article>
+
+  <div class="dash"></div>
+
+  <div class="grouplabel">also built</div>
+
+  <article class="proj" id="runsmart">
+    <div class="body">
+      <div class="name">RunSmart</div>
+      <p>A financial-intelligence product that turns a small business's QuickBooks data into rolling forecasts, health indicators and early risk signals, so owners can see the likely effect of hiring, spending or growth before they commit to it.</p>
+      <p>I started by fixing bugs in its predecessor and grew into leading the product. The forecasting uses statistical models that account for seasonality, long-term trends and volatility, then explains what changed in plain language.</p>
+      <ul class="caps">
+        <li>Rolling forecasts driven by your real QuickBooks history</li>
+        <li>Health indicators and early risk signals</li>
+        <li>An Intuit App Partner, used by people in more than 40 countries</li>
+      </ul>
+    </div>
+    <div class="pmeta">
+      <dl>
+        <dt>stack</dt><dd>Laravel, Vue, QuickBooks API</dd>
+        <dt>role</dt><dd>lead engineer</dd>
+        <dt>status</dt><dd>in production</dd>
+      </dl>
+    </div>
+  </article>
+
+  <div class="dash"></div>
+  <div style="height:0"></div>
+
+  <article class="proj" id="pickup">
+    <div class="body">
+      <div class="name">PickUp</div>
+      <p>Built for teams who win their work in Pipedrive and deliver it in ClickUp. When a deal reaches a chosen stage, PickUp generates a fully structured ClickUp project from your own templates, so nothing is lost in the handover between sales and delivery.</p>
+      <p>Setup runs through a secure two-minute connection, then it runs on its own. It is listed and approved on the Pipedrive Marketplace.</p>
+    </div>
+    <div class="pmeta">
+      <dl>
+        <dt>stack</dt><dd>Laravel, Pipedrive, ClickUp, OAuth</dd>
+        <dt>role</dt><dd>built end to end</dd>
+        <dt>status</dt><dd>live on the marketplace</dd>
+      </dl>
+    </div>
+  </article>
+
+  <div class="dash"></div>
+  <div style="height:0"></div>
+
+  <article class="proj" id="tododrive">
+    <div class="body">
+      <div class="name">ToDoDrive</div>
+      <p>Reliable background sync between Pipedrive and Microsoft To Do, one direction or both ways, carrying due dates, importance and notes. You choose which activity types are kept in step.</p>
+      <p>It came out of a real workflow problem at an ingredients distributor. The goal was sync that simply runs, so nobody has to think about it. Built and currently awaiting Pipedrive Marketplace approval.</p>
+    </div>
+    <div class="pmeta">
+      <dl>
+        <dt>stack</dt><dd>Laravel, Pipedrive, Microsoft To Do</dd>
+        <dt>role</dt><dd>built end to end</dd>
+        <dt>status</dt><dd>awaiting approval</dd>
+      </dl>
+    </div>
+  </article>
+
+  <div class="dash"></div>
+
+  <section class="contact">
+    <div class="label">start a conversation</div>
+    <p class="lead">Have an app that needs a steady pair of hands? Tell me what's worrying you.</p>
+    <button class="email" id="email">james@jamesbarron.co.uk</button>
+    <span class="copied" id="copied">copied</span>
+  </section>
+
+  <div class="dash"></div>
+  <footer class="foot">
+    <span>James Barron · web &amp; mobile apps that stick around</span>
+    <span>Bath, UK · building apps since 2005</span>
+  </footer>
+
+</div>
+
+<script>
+  function dur(year, month, day) {
+    var start = new Date(year, month, day);
+    var now = new Date();
+    var m = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+    if (now.getDate() < start.getDate()) m -= 1;
+    var y = Math.floor(m / 12);
+    var rem = m % 12;
+    var out = [];
+    if (y > 0) out.push(y + (y === 1 ? ' year' : ' years'));
+    out.push(rem + (rem === 1 ? ' month' : ' months'));
+    return out.join(', ');
+  }
+  var a = document.getElementById('rsg-dur'); if (a) a.textContent = dur(2023, 9, 9);
+  var b = document.getElementById('blip-dur'); if (b) b.textContent = dur(2022, 5, 17);
+
+  var btn = document.getElementById('email');
+  var note = document.getElementById('copied');
+  if (btn) btn.addEventListener('click', function () {
+    navigator.clipboard && navigator.clipboard.writeText('james@jamesbarron.co.uk');
+    note.classList.add('on');
+    setTimeout(function () { note.classList.remove('on'); }, 1600);
+  });
+</script>
+</body>
+</html>
